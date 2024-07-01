@@ -117,7 +117,7 @@ Object life cycle
 
 
 		configuration file:xml,java,annotation
-		
+						<beans><bean id class> /@Component,@ComponentScan, @Configuration
 		20+
 		
 		spring core module
@@ -156,3 +156,67 @@ https://survey.zohopublic.com/zs/C4BTP1		Springboot
 https://survey.zohopublic.com/zs/ZSBTwU      react
 
 
+
+Layared Architecture:
+======================
+		separation of concern
+		
+			three layers			
+			
+		presentation layer
+		
+		service  layer
+		
+		persitance layer/DAO Layer
+		
+		
+		@Component
+		
+@Service	@Repository  @Controller		
+		
+		
+		
+		@Service
+		class ServiceLayer
+		{
+		
+		
+		
+		}
+		
+		@Repository
+		class DaoLayer
+		{
+		
+		
+		
+		}
+		@Controller
+		class ControllerClass 
+		{
+		
+		
+		}
+		
+		
+		@Component
+		@ComponentScan
+		@Configuration
+		@Service
+		@COntroller
+		@Repository
+		@Autowired
+		@Bean
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
