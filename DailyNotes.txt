@@ -1,0 +1,158 @@
+Java 
+=========
+keywords
+
+Datatypes
+
+
+identifier
+
+variables
+
+\*
+
+*/
+
+class Welcome  //PascalCase
+{
+	public static void main(String args[])
+	{
+		System.out
+	}
+}
+		translator
+		
+		compiler--->javac filename.java
+		
+					.class file
+			
+		execution--->JVM
+		
+	INSTALLATIONS:	
+		java 17 
+		eclipse
+		STS
+		mysql
+		postman
+		
+		nodejs
+		VScode
+		react
+		
+Exception handling 
+		try,catch,finally,throw,throws
+
+collections
+		
+		array--->group of values which are similar type
+		
+		List,Set,Queue,Map
+		
+		
+Spring framework:		
+		
+				ready made 
+
+		2 types 
+			
+			invasive
+			non-invasive 
+			
+	spring is non-invasive framework which is used to create 
+			light weight and loosley coupled application		
+			
+			invasive  		struts,ejb
+			non-invasive 	spring,hibernate 		
+			
+			light weight 
+			heavy weight
+			
+			
+			loosley coupled 
+			tighlty coupled
+
+
+servlet
+
+	class Login implements HttpServlet  -11 
+		{
+		
+		
+		}
+		1*11s
+	heavy weight 
+
+	light weight 
+
+
+
+	loosley coupled 
+	tighlty coupled
+	
+class Test
+{
+	Test()
+	{
+	}
+
+}
+
+
+class Client
+{
+	Test test=new Test();
+
+
+}
+
+loosley coupled spring  -->container-->BeanFactory,ApplicationContext
+
+Object life cycle
+1)creation of object
+2)wiring the object
+3)configuring the object
+4)destroying the object
+
+		IOC-->inversion of control --->dependency injection
+
+
+		configuration file:xml,java,annotation
+		
+		20+
+		
+		spring core module
+
+		2003 1.x  rod johnson  EJB
+		6.x
+		
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>6.1.3</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>6.1.3</version>
+</dependency>
+  
+	@Component
+	class Employee{
+	
+	
+	}
+	@Configuration
+	@ComponentScan("packagename")
+	class Test
+	{
+	
+	}
+
+https://survey.zohopublic.com/zs/C4BTP1		Springboot
+
+
+
+	
+https://survey.zohopublic.com/zs/ZSBTwU      react
+
+
