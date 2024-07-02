@@ -55,8 +55,8 @@ Spring framework:
 
 		2 types 
 			
-			invasive
-			non-invasive 
+			invasive		it will force to the developer to implement predefined api
+			non-invasive 	it will never force to the developer to implement predefined api
 			
 	spring is non-invasive framework which is used to create 
 			light weight and loosley coupled application		
@@ -72,7 +72,9 @@ Spring framework:
 			tighlty coupled
 
 
-servlet
+servlet,EJB --->Rod Johnson -->interface21-->spring -->2003
+	
+		spring
 
 	class Login implements HttpServlet  -11 
 		{
@@ -100,7 +102,7 @@ class Test
 
 class Client
 {
-	Test test=new Test();
+	Test test=new Test();//tightly coupled
 
 
 }
@@ -118,11 +120,11 @@ Object life cycle
 
 		configuration file:xml,java,annotation
 						<beans><bean id class> /@Component,@ComponentScan, @Configuration
-		20+
+		20+ 22
 		
 		spring core module
 
-		2003 1.x  rod johnson  EJB
+		2003 1.x  rod johnson  EJB		spring boot 3.x-->17
 		6.x
 		
 <dependency>
@@ -207,12 +209,67 @@ Layared Architecture:
 		@Repository
 		@Autowired
 		@Bean
+		@Qualifier
+		@Primary
+		
+		
+ 20+
+		spring core
+		spring jpa
+		spring aop
+		spring jdbc
+		spring orm
+		spring web
+		spring rest
+		.....
 		
 		
 		
-		
-		
-		
+Mysql Querys:
+===============#DDL-->create,alter,drop,truncate,rename 
+#DML-->insert,update,delete
+#DRL-->select
+create database cts;
+use cts;
+create table employees(eid int,ename varchar(20),esal float,edesg varchar(10));
+alter table employees add column address varchar(20);
+describe employees;
+alter table employees drop address;
+alter table employees change eid empno int;
+alter table employees rename to emps;
+describe emps;
+drop table emps;
+truncate table emps;
+#DML-i,u,d
+insert into employees values(123,'suresh',9000,'developer');
+insert into employees values(124,'naresh',32111,'trainer');
+insert into employees values(125,'rajesh',32222,'admin');
+insert into employees values(555,'swetha',76544,'admin');
+insert into employees values(126,'hitesh',65554,'hr');
+insert into employees values(127,'mahesh',74234,'developer');
+select * from employees;
+select eid from employees;
+select eid,ename from employees;
+update employees set esal=esal+5000 where edesg='developer';
+update employees set edesg="ceo";
+delete from employees where esal>60000;
+delete from employees;
+truncate table employees;
+
+select max(esal) from  employees;
+select max(esal) from  employees where esal<(select max(esal) from  employees);
+select min(esal) from  employees;
+select sum(esal) from  employees;
+select avg(esal) from  employees;
+select sum(esal),edesg from employees group by edesg;
+select * from  employees order by ename desc ;
+#constraints nn,check,unique,pk,fk
+
+create table emp_info(eid int primary key,ename varchar(20) not null,esal float check(esal>10000),edesg varchar(10));
+select * from  emp_info;
+insert into emp_info(eid,esal) values(123,19000);
+
+insert into employees(eid,esal) values(123,19000);
 		
 		
 		
