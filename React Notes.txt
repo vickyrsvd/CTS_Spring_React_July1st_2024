@@ -1,0 +1,185 @@
+
+HTML
+CSS
+JAVASCRIPT
+
+
+REACT-->HTML,CSS,JS
+
+
+			website--->webpages
+
+						
+						static 	-->HTML--> markup <> </>	html					
+						dynamic	-->home
+
+
+		5.x-->google 
+	
+		welcome.html
+		
+		<html>
+			<head>
+				<title>
+				load--->css,js
+			</head>
+			<body>
+				<h1>welcome to html</h1>
+			
+			</body>
+		</html>
+
+		browser--->engine
+		
+			google-->v8					DOM TREE  -->browser
+			IE	-->spider monkey
+			mozilla-->chakra
+			
+		form tags--><form><input>
+			
+			
+	CSS:	cascading style sheet 3
+========	
+		
+		1)inline		< style="color:red">	
+		2)internal		selector{propname1:value;propname2:value}
+		3)external
+
+
+		
+				1)id selector		#
+				2)class selector	.		
+				3)element selector	h1
+				4)group selector	h1,h2,h3,body{}
+				5)all selector		*{}	
+
+JAVASCRIPT:
+===========
+
+	dynamic typed language
+	
+	int contact=89238;//static typed 
+		contact="sandeep"
+
+	
+		let/var/const
+		
+		ECMAScript-->specification
+		
+		ECMAScript-->ES6/ES2015
+			
+			javascript-->
+					
+			<html>
+				
+				
+		let name="suresh"
+
+		function add()
+		{
+		
+		}
+		
+React:
+=====		JSX(javascript xml)      <h1 className="color">welcome</h1> -->JS
+		js library	-->META  jordan walke 2011  2013
+		
+		UI
+		M  V C
+		react native   --> to create mobile apps
+		Virtual DOM			react CLI create-react-app---->webpack,babel
+
+		component -->single page application
+
+		component-->html+css+js
+		
+		root component	-->app
+		
+		
+			node js 
+				node --version
+				npm  --version
+				npm install packagename
+				npm install @angular/cli
+				npm install -g typescript
+				
+		Step-1 to create project
+		
+				npm install -g create-react-app
+				
+				create-react-app demoapp
+		STEP-2		
+				npx create-react-app welcomeapp
+				
+launch react app on different ports(package.json)
+			 "scripts": {
+    "start": "export PORT=3006 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+  
+  or
+  
+  .env 
+  PORT=1234		
+				
+		components in react		
+				1)class component / statefull component(muttable)
+import React from 'react'
+class Welcome extends React.Component 
+{
+  render(){
+    return(
+      <div>
+        <p>am from welcome component</p>
+      </div>
+	  
+    )
+  }
+}		
+export default Welcome	
+				2)functional component/ stateless component	/props(imuttable)					
+function App() {
+  return (
+    <div>
+        <h1>welcome to react root component</h1>
+    </div>
+  );
+}
+
+Difference upto 16.x version
+	Class Component			Functional Component 
+	
+State:								props
+state is container which 		container which holds some data related to component
+can hold some data related
+to component					
+
+statefull component			   stateless component
+
+state is muttable				props are imuttable
+
+								props are by default readonly
+this.state,setState
+this.props
+
+
+import React from 'react'
+class Welcome extends React.Component 
+{
+  render(){
+    return(
+      <div>
+        <p style="">am from welcome component</p>
+      </div>
+	  
+    )
+  }
+}		
+
+
+
+
+
+
