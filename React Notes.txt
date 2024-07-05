@@ -197,3 +197,24 @@ npm install --save bootstrap
 import "bootstrap/dist/css/bootstrap.min.css"
 
 https://docs.google.com/spreadsheets/d/1-5DfnQ9pJGsCA-nuo97QyN481wKwWmwTMlmQ2yiWFtI/edit?usp=sharing
+
+
+
+
+		components
+		
+			functional 	no state,props(imuttable)
+			
+			class 			props,state(muttable)
+	
+Hooks	(16.3)
+
+		react/js function
+
+
+
+
+
+
+
+
