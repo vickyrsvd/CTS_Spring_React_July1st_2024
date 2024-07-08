@@ -211,7 +211,8 @@ Layared Architecture:
 		@Bean
 		@Qualifier
 		@Primary
-		
+		@Value
+		@PropertySource
 		
  20+
 		spring core
@@ -270,6 +271,168 @@ select * from  emp_info;
 insert into emp_info(eid,esal) values(123,19000);
 
 insert into employees(eid,esal) values(123,19000);
+	
+
+	configuration
+	
+	NOTE:spring has given annotations for userdefined classes  but not for predefined classes
+	
+		explicit config java config/xml config
+		maven dependencies
+		server
+
+Spring Boot:		3.x
+===========	
+
+		1)auto configuration: most of the commonly used classes already configured by the spring boots
+
+		2)starters
+		
+		3)embeded server  -->tomcat
+		
+		4)actuators   /health,/beans,/metrics,/env....
+		
+		5)inbuilt DB		-->h2
+		
+		
+		
+		STS--->
+		
+		spring intializer
+		
+
+
+	@SpringBootApplication
+
+
+	JDBC API:-->sun
+	
+		java database connectivity
+
+	
+	mysql <--->java
+
+JPA 
+		1)no checked exceptions
+		2)no table creation
+		3)no querys 
+		4)cache 
+		5)no boiler plate code s
+		
+		
+		
+		JPA 		-->specification sun
+		
+		HIBERNATE   -->implementations
+
+
+		jpa
+		
+hibernate,eclipselink,toplink,ibatis.....ORM tools		
+
+
+@Entity
+@Table("emp_info")
+class Employee{
+@Column(empno,size-10)
+@Id
+	eid
+	ename
+	esal
+	desg
+	add....
+
+}
+
+
+persistence.xml
+
+<persistence>
+	<persistence-unit>
+		<property>
+	
+		
+		persist,merge,remove,find--->1 row
+		
+		JPQL--->java persistence query language
+		
+		mysql
+		
+		
+		select * from employees_info;//mysql
+		
+		select e from employee e;
+		
+		
+	employeeManagement App:
+
+		1.Add employee
+		2.update employee
+		3.delete employee
+		4.get employee by id
+		5.get all employees
+		6.get all employees between prices
+		7.get all employees by category
+		
+		
+		H2 DB
+		
+		controller
+		
+		
+		
+		Controller
+		
+		RestController
+		
+		webservices		--->SOAP(XML),REST(XML,Json,html,pt,js)
+		
+				JSON
+				
+				JSON--->jackson
+				
+				java --->xml-->jax-b
+				
+		SP,RMI,EJB,DCOM,CORBA,RPC
+		
+				 x atm			bank app
+				machine
+				java			python
+				
+			sbi atm card	
+				
+				
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.show-sql=true
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2
+				
+				
+	EmployeeManagement App:
+								Employee:empid,empname,empsal,empdesg
+		1.Add employee
+		2.update employee
+		3.delete employee
+		4.get employee by id
+		5.get all employees
+		6.get all employees between Salay
+		7.get all employees by Designation
+		
+		
+		Validations:
+		
+	CrudRepository	-->CRUD 
+	
+		JpaRepositorys
+		
+			CRUD+pagingsorting
+		
+		
+		DSL Grammer
+		
+		https://stackabuse.com/guide-to-spring-data-jpa/
 		
 		
 		
