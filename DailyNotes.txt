@@ -1,8 +1,10 @@
+https://stackoverflow.com/questions/51154177/extends-websecurityconfigureradapter-cannot-be-resolved
 Java 
 =========
 keywords
 
 Datatypes
+
 
 
 identifier
